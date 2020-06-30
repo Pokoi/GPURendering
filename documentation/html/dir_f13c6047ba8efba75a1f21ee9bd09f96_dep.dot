@@ -1,0 +1,11 @@
+digraph "C:/Users/jesus/OneDrive/Escritorio/OpenGLExample-master/code/sources" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_3a6ec866047884671a6fa0fe8d6405d6 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="code" fontname="Helvetica", fontsize="10", URL="dir_3a6ec866047884671a6fa0fe8d6405d6.html"]
+  dir_f13c6047ba8efba75a1f21ee9bd09f96 [shape=box, label="sources", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_f13c6047ba8efba75a1f21ee9bd09f96.html"];
+  }
+  dir_08466209809c170d28830e6ec98dece7 [shape=box label="headers" URL="dir_08466209809c170d28830e6ec98dece7.html"];
+  dir_f13c6047ba8efba75a1f21ee9bd09f96->dir_08466209809c170d28830e6ec98dece7 [headlabel="19", labeldistance=1.5 headhref="dir_000007_000006.html"];
+}

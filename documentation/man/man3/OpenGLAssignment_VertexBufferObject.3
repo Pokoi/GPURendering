@@ -1,0 +1,151 @@
+.TH "OpenGLAssignment::VertexBufferObject" 3 "Sun May 24 2020" "Jesús Fermín Villar Ramírez | OpenGLAssignment" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OpenGLAssignment::VertexBufferObject
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <VertexBufferObject\&.hpp>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBBufferTypes\fP { \fBVBO\fP = GL_ARRAY_BUFFER, \fBEAB\fP = GL_ELEMENT_ARRAY_BUFFER }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBVertexBufferObject\fP (const GLbyte *data, size_t size, \fBBufferTypes\fP buffer_type=\fBVBO\fP)"
+.br
+.ti -1c
+.RI "\fBVertexBufferObject\fP (const GLubyte *data, size_t size, \fBBufferTypes\fP buffer_type=\fBVBO\fP)"
+.br
+.ti -1c
+.RI "\fBVertexBufferObject\fP (const GLshort *data, size_t size, \fBBufferTypes\fP buffer_type=\fBVBO\fP)"
+.br
+.ti -1c
+.RI "\fBVertexBufferObject\fP (const GLushort *data, size_t size, \fBBufferTypes\fP buffer_type=\fBVBO\fP)"
+.br
+.ti -1c
+.RI "\fBVertexBufferObject\fP (const GLint *data, size_t size, \fBBufferTypes\fP buffer_type=\fBVBO\fP)"
+.br
+.ti -1c
+.RI "\fBVertexBufferObject\fP (const GLuint *data, size_t size, \fBBufferTypes\fP buffer_type=\fBVBO\fP)"
+.br
+.ti -1c
+.RI "\fBVertexBufferObject\fP (const GLfloat *data, size_t size, \fBBufferTypes\fP buffer_type=\fBVBO\fP)"
+.br
+.ti -1c
+.RI "\fB~VertexBufferObject\fP ()"
+.br
+.RI "Frees the memory\&. "
+.ti -1c
+.RI "GLenum \fBget_element_type\fP () const"
+.br
+.RI "Get the type of the content of the buffer\&. "
+.ti -1c
+.RI "void \fBbind\fP () const"
+.br
+.RI "Binds the buffer to use it\&. "
+.ti -1c
+.RI "void \fBunbind\fP () const"
+.br
+.RI "Unbinds the buffer before use it\&. "
+.ti -1c
+.RI "void \fBcreate\fP (const void *data, size_t size)"
+.br
+.RI "Create a buffer in the video memory\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 36 of file VertexBufferObject\&.hpp\&.
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBOpenGLAssignment::VertexBufferObject::BufferTypes\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIVBO \fP\fP
+.TP
+\fB\fIEAB \fP\fP
+.PP
+Definition at line 48 of file VertexBufferObject\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "OpenGLAssignment::VertexBufferObject::VertexBufferObject (const GLbyte * data, size_t size, \fBBufferTypes\fP buffer_type = \fC\fBVBO\fP\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 56 of file VertexBufferObject\&.hpp\&.
+.SS "OpenGLAssignment::VertexBufferObject::VertexBufferObject (const GLubyte * data, size_t size, \fBBufferTypes\fP buffer_type = \fC\fBVBO\fP\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 69 of file VertexBufferObject\&.hpp\&.
+.SS "OpenGLAssignment::VertexBufferObject::VertexBufferObject (const GLshort * data, size_t size, \fBBufferTypes\fP buffer_type = \fC\fBVBO\fP\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 81 of file VertexBufferObject\&.hpp\&.
+.SS "OpenGLAssignment::VertexBufferObject::VertexBufferObject (const GLushort * data, size_t size, \fBBufferTypes\fP buffer_type = \fC\fBVBO\fP\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 92 of file VertexBufferObject\&.hpp\&.
+.SS "OpenGLAssignment::VertexBufferObject::VertexBufferObject (const GLint * data, size_t size, \fBBufferTypes\fP buffer_type = \fC\fBVBO\fP\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 103 of file VertexBufferObject\&.hpp\&.
+.SS "OpenGLAssignment::VertexBufferObject::VertexBufferObject (const GLuint * data, size_t size, \fBBufferTypes\fP buffer_type = \fC\fBVBO\fP\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 114 of file VertexBufferObject\&.hpp\&.
+.SS "OpenGLAssignment::VertexBufferObject::VertexBufferObject (const GLfloat * data, size_t size, \fBBufferTypes\fP buffer_type = \fC\fBVBO\fP\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 125 of file VertexBufferObject\&.hpp\&.
+.SS "OpenGLAssignment::VertexBufferObject::~VertexBufferObject ()\fC [inline]\fP"
+
+.PP
+Frees the memory\&. 
+.PP
+Definition at line 139 of file VertexBufferObject\&.hpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void OpenGLAssignment::VertexBufferObject::bind () const\fC [inline]\fP"
+
+.PP
+Binds the buffer to use it\&. 
+.PP
+Definition at line 158 of file VertexBufferObject\&.hpp\&.
+.SS "void OpenGLAssignment::VertexBufferObject::create (const void * data, size_t size)\fC [inline]\fP"
+
+.PP
+Create a buffer in the video memory\&. 
+.PP
+Definition at line 174 of file VertexBufferObject\&.hpp\&.
+.SS "GLenum OpenGLAssignment::VertexBufferObject::get_element_type () const\fC [inline]\fP"
+
+.PP
+Get the type of the content of the buffer\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The content type 
+.RE
+.PP
+
+.PP
+Definition at line 150 of file VertexBufferObject\&.hpp\&.
+.SS "void OpenGLAssignment::VertexBufferObject::unbind () const\fC [inline]\fP"
+
+.PP
+Unbinds the buffer before use it\&. 
+.PP
+Definition at line 166 of file VertexBufferObject\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Jesús Fermín Villar Ramírez | OpenGLAssignment from the source code\&.

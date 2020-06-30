@@ -1,0 +1,102 @@
+.TH "OpenGLAssignment::Shader::SourceCode" 3 "Sun May 24 2020" "Jesús Fermín Villar Ramírez | OpenGLAssignment" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OpenGLAssignment::Shader::SourceCode
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Shader\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "size_t \fBsize\fP ()"
+.br
+.RI "Gets the size of the content of the shader\&. "
+.ti -1c
+.RI "\fBoperator const std::string &\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator const char *\fP () const"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBSourceCode\fP \fBfrom_string\fP (const std::string &code_string)"
+.br
+.RI "Extract the shader code from a string\&. "
+.ti -1c
+.RI "static \fBSourceCode\fP \fBfrom_file\fP (const std::string &file_path)"
+.br
+.RI "Extract the shader code from a file\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 42 of file Shader\&.hpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBShader::SourceCode\fP OpenGLAssignment::Shader::SourceCode::from_file (const std::string & file_path)\fC [static]\fP"
+
+.PP
+Extract the shader code from a file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfile_path\fP The path of the file 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The shader sourcecode 
+.RE
+.PP
+
+.PP
+Definition at line 44 of file Shader\&.cpp\&.
+.SS "static \fBSourceCode\fP OpenGLAssignment::Shader::SourceCode::from_string (const std::string & code_string)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Extract the shader code from a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcode_string\fP The string with the shader code 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The shader sourcecode 
+.RE
+.PP
+
+.PP
+Definition at line 54 of file Shader\&.hpp\&.
+.SS "OpenGLAssignment::Shader::SourceCode::operator const char * () const\fC [inline]\fP"
+
+.PP
+Definition at line 99 of file Shader\&.hpp\&.
+.SS "OpenGLAssignment::Shader::SourceCode::operator const std::string & () const\fC [inline]\fP"
+
+.PP
+Definition at line 94 of file Shader\&.hpp\&.
+.SS "size_t OpenGLAssignment::Shader::SourceCode::size ()\fC [inline]\fP"
+
+.PP
+Gets the size of the content of the shader\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The size of the shader content 
+.RE
+.PP
+
+.PP
+Definition at line 87 of file Shader\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Jesús Fermín Villar Ramírez | OpenGLAssignment from the source code\&.

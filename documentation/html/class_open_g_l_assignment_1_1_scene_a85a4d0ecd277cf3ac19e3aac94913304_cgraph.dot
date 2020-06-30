@@ -1,0 +1,14 @@
+digraph "OpenGLAssignment::Scene::Scene"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OpenGLAssignment::Scene\l::Scene",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Creates an instance."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="OpenGLAssignment::Render\lTask::add_opaque_model",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_render_task.html#a8bbb6dd7a4faa89c13f9514f2309a257",tooltip="Adds an opaque model to the collection."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="OpenGLAssignment::Render\lTask::add_transparent_model",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_render_task.html#a0c1bbdbdc0a9766b4080c55bae710471",tooltip="Adds a transparent model to the collection."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="OpenGLAssignment::Material::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_material.html#a5bfa0d378508f131d23de634d4ef18fa",tooltip="Gets a Material from the factory. Creates one if the desired does not exist."];
+}

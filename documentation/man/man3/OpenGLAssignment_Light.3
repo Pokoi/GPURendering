@@ -1,0 +1,158 @@
+.TH "OpenGLAssignment::Light" 3 "Sun May 24 2020" "Jesús Fermín Villar Ramírez | OpenGLAssignment" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OpenGLAssignment::Light
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Light\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLight\fP (glm::vec3 color, float intensity=1\&.f, float ambiental=0\&.25f)"
+.br
+.RI "Creates an instance\&. "
+.ti -1c
+.RI "void \fBset_color\fP (glm::vec3 &color)"
+.br
+.RI "Set the color of the light\&. "
+.ti -1c
+.RI "void \fBset_ambient_intensity\fP (float value)"
+.br
+.RI "Set the ambient intensity\&. "
+.ti -1c
+.RI "void \fBset_intensity\fP (float value)"
+.br
+.RI "Set the intensity\&. "
+.ti -1c
+.RI "glm::vec3 & \fBget_color\fP ()"
+.br
+.RI "Gets the color of the light @retun The light color\&. "
+.ti -1c
+.RI "float \fBget_intensity\fP ()"
+.br
+.RI "Gets the light intensity\&. "
+.ti -1c
+.RI "float \fBget_ambient_intensity\fP ()"
+.br
+.RI "Gets the ambient intensity\&. "
+.ti -1c
+.RI "void \fBrender\fP (\fBCamera\fP &camera)"
+.br
+.RI "Render\&. Update the lights values\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 37 of file Light\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "OpenGLAssignment::Light::Light (glm::vec3 color, float intensity = \fC1\&.f\fP, float ambiental = \fC0\&.25f\fP)\fC [inline]\fP"
+
+.PP
+Creates an instance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcolor\fP The color of the light 
+.br
+\fIintensity\fP The intensity of the light 
+.br
+\fIambiental\fP The ambient intensity 
+.RE
+.PP
+
+.PP
+Definition at line 57 of file Light\&.hpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "float OpenGLAssignment::Light::get_ambient_intensity ()\fC [inline]\fP"
+
+.PP
+Gets the ambient intensity\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The ambient intensity 
+.RE
+.PP
+
+.PP
+Definition at line 119 of file Light\&.hpp\&.
+.SS "glm::vec3& OpenGLAssignment::Light::get_color ()\fC [inline]\fP"
+
+.PP
+Gets the color of the light @retun The light color\&. 
+.PP
+Definition at line 101 of file Light\&.hpp\&.
+.SS "float OpenGLAssignment::Light::get_intensity ()\fC [inline]\fP"
+
+.PP
+Gets the light intensity\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The light intensity 
+.RE
+.PP
+
+.PP
+Definition at line 110 of file Light\&.hpp\&.
+.SS "void OpenGLAssignment::Light::render (\fBCamera\fP & camera)\fC [inline]\fP"
+
+.PP
+Render\&. Update the lights values\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcamera\fP The reference of the camera 
+.RE
+.PP
+
+.PP
+Definition at line 128 of file Light\&.hpp\&.
+.SS "void OpenGLAssignment::Light::set_ambient_intensity (float value)\fC [inline]\fP"
+
+.PP
+Set the ambient intensity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvalue\fP The ambient intensity to set 
+.RE
+.PP
+
+.PP
+Definition at line 83 of file Light\&.hpp\&.
+.SS "void OpenGLAssignment::Light::set_color (glm::vec3 & color)\fC [inline]\fP"
+
+.PP
+Set the color of the light\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcolor\fP The color to set 
+.RE
+.PP
+
+.PP
+Definition at line 74 of file Light\&.hpp\&.
+.SS "void OpenGLAssignment::Light::set_intensity (float value)\fC [inline]\fP"
+
+.PP
+Set the intensity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIThe\fP intensity to set 
+.RE
+.PP
+
+.PP
+Definition at line 92 of file Light\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Jesús Fermín Villar Ramírez | OpenGLAssignment from the source code\&.

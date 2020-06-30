@@ -1,0 +1,127 @@
+.TH "OpenGLAssignment::Window" 3 "Sun May 24 2020" "Jesús Fermín Villar Ramírez | OpenGLAssignment" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OpenGLAssignment::Window
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Window\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBWindow\fP (std::string name, unsigned int width, unsigned int height)"
+.br
+.RI "Creates an instance\&. "
+.ti -1c
+.RI "\fB~Window\fP ()"
+.br
+.RI "Releases the memory\&. "
+.ti -1c
+.RI "unsigned int \fBget_width\fP ()"
+.br
+.RI "Get the width of the window\&. "
+.ti -1c
+.RI "unsigned int \fBget_height\fP ()"
+.br
+.RI "Gets the height of the window\&. "
+.ti -1c
+.RI "void \fBswap_buffers\fP ()"
+.br
+.RI "Swap the buffers of the window\&. "
+.ti -1c
+.RI "void \fBclear\fP ()"
+.br
+.RI "Clears the window\&. "
+.ti -1c
+.RI "bool \fBpoll_event\fP (sf::Event &e)"
+.br
+.RI "Handle the window events\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 38 of file Window\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "OpenGLAssignment::Window::Window (std::string name, unsigned int width, unsigned int height)\fC [inline]\fP"
+
+.PP
+Creates an instance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP The name of the window 
+.br
+\fIwidth\fP The width of the window 
+.br
+\fIheight\fP The height of the window 
+.RE
+.PP
+
+.PP
+Definition at line 54 of file Window\&.hpp\&.
+.SS "OpenGLAssignment::Window::~Window ()\fC [inline]\fP"
+
+.PP
+Releases the memory\&. 
+.PP
+Definition at line 69 of file Window\&.hpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void OpenGLAssignment::Window::clear ()\fC [inline]\fP"
+
+.PP
+Clears the window\&. 
+.PP
+Definition at line 103 of file Window\&.hpp\&.
+.SS "unsigned int OpenGLAssignment::Window::get_height ()\fC [inline]\fP"
+
+.PP
+Gets the height of the window\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The window height 
+.RE
+.PP
+
+.PP
+Definition at line 87 of file Window\&.hpp\&.
+.SS "unsigned int OpenGLAssignment::Window::get_width ()\fC [inline]\fP"
+
+.PP
+Get the width of the window\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The window width 
+.RE
+.PP
+
+.PP
+Definition at line 78 of file Window\&.hpp\&.
+.SS "bool OpenGLAssignment::Window::poll_event (sf::Event & e)\fC [inline]\fP"
+
+.PP
+Handle the window events\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIe\fP The sfml event 
+.RE
+.PP
+
+.PP
+Definition at line 113 of file Window\&.hpp\&.
+.SS "void OpenGLAssignment::Window::swap_buffers ()\fC [inline]\fP"
+
+.PP
+Swap the buffers of the window\&. 
+.PP
+Definition at line 95 of file Window\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Jesús Fermín Villar Ramírez | OpenGLAssignment from the source code\&.

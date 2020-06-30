@@ -1,0 +1,291 @@
+.TH "OpenGLAssignment::ShaderProgram" 3 "Sun May 24 2020" "Jesús Fermín Villar Ramírez | OpenGLAssignment" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OpenGLAssignment::ShaderProgram
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ShaderProgram\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBShaderProgram\fP ()"
+.br
+.RI "Creates an instance\&. "
+.ti -1c
+.RI "\fB~ShaderProgram\fP ()"
+.br
+.RI "Frees the memory\&. "
+.ti -1c
+.RI "void \fBdisable\fP ()"
+.br
+.RI "Disable the shader program before use it\&. "
+.ti -1c
+.RI "void \fBattach\fP (const \fBShader\fP &shader)"
+.br
+.RI "Attach a shader to the shader program\&. "
+.ti -1c
+.RI "void \fBdetach\fP (const \fBShader\fP &shader)"
+.br
+.RI "Detach a shader from the shader program\&. "
+.ti -1c
+.RI "bool \fBlink\fP ()"
+.br
+.RI "Link a shader program\&. "
+.ti -1c
+.RI "void \fBuse\fP ()"
+.br
+.RI "Prepare the shader program to use it\&. "
+.ti -1c
+.RI "unsigned int \fBget_uniform_location\fP (std::string identifier)"
+.br
+.RI "Get the location of a uniform value\&. "
+.ti -1c
+.RI "unsigned int \fBget_vertex_attrib_location\fP (std::string identifier)"
+.br
+.RI "Gets the location of a vertex attribute\&. "
+.ti -1c
+.RI "\fBoperator GLuint\fP () const"
+.br
+.ti -1c
+.RI "void \fBset_variant_value\fP (GLint variant_id, const GLint &value)"
+.br
+.ti -1c
+.RI "void \fBset_variant_value\fP (GLint variant_id, const float &value)"
+.br
+.ti -1c
+.RI "void \fBset_variant_value\fP (GLint variant_id, const glm::vec2 &vector)"
+.br
+.ti -1c
+.RI "void \fBset_variant_value\fP (GLint variant_id, const glm::vec3 &vector)"
+.br
+.ti -1c
+.RI "void \fBset_variant_value\fP (GLint variant_id, const glm::vec4 &vector)"
+.br
+.ti -1c
+.RI "void \fBset_variant_value\fP (GLint variant_id, const glm::mat2 &matrix)"
+.br
+.ti -1c
+.RI "void \fBset_variant_value\fP (GLint variant_id, const glm::mat3 &matrix)"
+.br
+.ti -1c
+.RI "void \fBset_variant_value\fP (GLint variant_id, const glm::mat4 &matrix)"
+.br
+.ti -1c
+.RI "void \fBset_vertex_attribute\fP (GLint attribute_id, const float &value)"
+.br
+.ti -1c
+.RI "void \fBset_vertex_attribute\fP (GLint attribute_id, const glm::vec2 &vector)"
+.br
+.ti -1c
+.RI "void \fBset_vertex_attribute\fP (GLint attribute_id, const glm::vec3 &vector)"
+.br
+.ti -1c
+.RI "void \fBset_vertex_attribute\fP (GLint attribute_id, const glm::vec4 &vector)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static std::shared_ptr< \fBShaderProgram\fP > \fBcreate_shader\fP (std::string name, std::string vertex_shader_path, std::string fragment_shader_path)"
+.br
+.RI "Creates a shader with the given info\&. "
+.ti -1c
+.RI "static std::shared_ptr< \fBShaderProgram\fP > \fBget_shader\fP (std::string name)"
+.br
+.RI "Gets a shader program by its name\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 43 of file ShaderProgram\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "OpenGLAssignment::ShaderProgram::ShaderProgram ()\fC [inline]\fP"
+
+.PP
+Creates an instance\&. 
+.PP
+Definition at line 70 of file ShaderProgram\&.hpp\&.
+.SS "OpenGLAssignment::ShaderProgram::~ShaderProgram ()\fC [inline]\fP"
+
+.PP
+Frees the memory\&. 
+.PP
+Definition at line 79 of file ShaderProgram\&.hpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void OpenGLAssignment::ShaderProgram::attach (const \fBShader\fP & shader)\fC [inline]\fP"
+
+.PP
+Attach a shader to the shader program\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshader\fP The shader to attach 
+.RE
+.PP
+
+.PP
+Definition at line 97 of file ShaderProgram\&.hpp\&.
+.SS "std::shared_ptr< \fBShaderProgram\fP > OpenGLAssignment::ShaderProgram::create_shader (std::string name, std::string vertex_shader_path, std::string fragment_shader_path)\fC [static]\fP"
+
+.PP
+Creates a shader with the given info\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP The name of the shader 
+.br
+\fIvertex_shader_path\fP The path of the vertex shader of this shader program 
+.br
+\fIfragment_shader_path\fP The path of the fragment shader of this shader program 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to the shader program 
+.RE
+.PP
+
+.PP
+Definition at line 39 of file ShaderProgram\&.cpp\&.
+.SS "void OpenGLAssignment::ShaderProgram::detach (const \fBShader\fP & shader)\fC [inline]\fP"
+
+.PP
+Detach a shader from the shader program\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshade\fP The shader to detach 
+.RE
+.PP
+
+.PP
+Definition at line 106 of file ShaderProgram\&.hpp\&.
+.SS "void OpenGLAssignment::ShaderProgram::disable ()\fC [inline]\fP"
+
+.PP
+Disable the shader program before use it\&. 
+.PP
+Definition at line 88 of file ShaderProgram\&.hpp\&.
+.SS "std::shared_ptr< \fBShaderProgram\fP > OpenGLAssignment::ShaderProgram::get_shader (std::string name)\fC [static]\fP"
+
+.PP
+Gets a shader program by its name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A reference to the desired shader program 
+.RE
+.PP
+
+.PP
+Definition at line 57 of file ShaderProgram\&.cpp\&.
+.SS "unsigned int OpenGLAssignment::ShaderProgram::get_uniform_location (std::string identifier)\fC [inline]\fP"
+
+.PP
+Get the location of a uniform value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIidentifier\fP The name of the uniform value 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The location 
+.RE
+.PP
+
+.PP
+Definition at line 133 of file ShaderProgram\&.hpp\&.
+.SS "unsigned int OpenGLAssignment::ShaderProgram::get_vertex_attrib_location (std::string identifier)\fC [inline]\fP"
+
+.PP
+Gets the location of a vertex attribute\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIidentifier\fP The name of the attribute 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The location 
+.RE
+.PP
+
+.PP
+Definition at line 147 of file ShaderProgram\&.hpp\&.
+.SS "bool OpenGLAssignment::ShaderProgram::link ()\fC [inline]\fP"
+
+.PP
+Link a shader program\&. 
+.PP
+Definition at line 114 of file ShaderProgram\&.hpp\&.
+.SS "OpenGLAssignment::ShaderProgram::operator GLuint () const\fC [inline]\fP"
+
+.PP
+Definition at line 157 of file ShaderProgram\&.hpp\&.
+.SS "void OpenGLAssignment::ShaderProgram::set_variant_value (GLint variant_id, const float & value)\fC [inline]\fP"
+
+.PP
+Definition at line 163 of file ShaderProgram\&.hpp\&.
+.SS "void OpenGLAssignment::ShaderProgram::set_variant_value (GLint variant_id, const GLint & value)\fC [inline]\fP"
+
+.PP
+Definition at line 162 of file ShaderProgram\&.hpp\&.
+.SS "void OpenGLAssignment::ShaderProgram::set_variant_value (GLint variant_id, const glm::mat2 & matrix)\fC [inline]\fP"
+
+.PP
+Definition at line 167 of file ShaderProgram\&.hpp\&.
+.SS "void OpenGLAssignment::ShaderProgram::set_variant_value (GLint variant_id, const glm::mat3 & matrix)\fC [inline]\fP"
+
+.PP
+Definition at line 168 of file ShaderProgram\&.hpp\&.
+.SS "void OpenGLAssignment::ShaderProgram::set_variant_value (GLint variant_id, const glm::mat4 & matrix)\fC [inline]\fP"
+
+.PP
+Definition at line 169 of file ShaderProgram\&.hpp\&.
+.SS "void OpenGLAssignment::ShaderProgram::set_variant_value (GLint variant_id, const glm::vec2 & vector)\fC [inline]\fP"
+
+.PP
+Definition at line 164 of file ShaderProgram\&.hpp\&.
+.SS "void OpenGLAssignment::ShaderProgram::set_variant_value (GLint variant_id, const glm::vec3 & vector)\fC [inline]\fP"
+
+.PP
+Definition at line 165 of file ShaderProgram\&.hpp\&.
+.SS "void OpenGLAssignment::ShaderProgram::set_variant_value (GLint variant_id, const glm::vec4 & vector)\fC [inline]\fP"
+
+.PP
+Definition at line 166 of file ShaderProgram\&.hpp\&.
+.SS "void OpenGLAssignment::ShaderProgram::set_vertex_attribute (GLint attribute_id, const float & value)\fC [inline]\fP"
+
+.PP
+Definition at line 171 of file ShaderProgram\&.hpp\&.
+.SS "void OpenGLAssignment::ShaderProgram::set_vertex_attribute (GLint attribute_id, const glm::vec2 & vector)\fC [inline]\fP"
+
+.PP
+Definition at line 172 of file ShaderProgram\&.hpp\&.
+.SS "void OpenGLAssignment::ShaderProgram::set_vertex_attribute (GLint attribute_id, const glm::vec3 & vector)\fC [inline]\fP"
+
+.PP
+Definition at line 173 of file ShaderProgram\&.hpp\&.
+.SS "void OpenGLAssignment::ShaderProgram::set_vertex_attribute (GLint attribute_id, const glm::vec4 & vector)\fC [inline]\fP"
+
+.PP
+Definition at line 174 of file ShaderProgram\&.hpp\&.
+.SS "void OpenGLAssignment::ShaderProgram::use ()\fC [inline]\fP"
+
+.PP
+Prepare the shader program to use it\&. 
+.PP
+Definition at line 123 of file ShaderProgram\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Jesús Fermín Villar Ramírez | OpenGLAssignment from the source code\&.

@@ -1,0 +1,16 @@
+digraph "OpenGLAssignment::Shader::SourceCode::from_file"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="OpenGLAssignment::Shader\l::SourceCode::from_file",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Extract the shader code from a file."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="OpenGLAssignment::Shader\lProgram::create_shader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_shader_program.html#ab7859b029ca47444b703dfac7fc9ef74",tooltip="Creates a shader with the given info."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="OpenGLAssignment::Material\l::Material",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_material.html#ac9a9ee53af3c678aa2f414a6aca80d09",tooltip="Creates an instance."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="OpenGLAssignment::Render\lTask::RenderTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_render_task.html#acc84de7fa5ca0bcfb88dfe0139a14934",tooltip="Creates an instance."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="OpenGLAssignment::Skybox\l::Skybox",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_skybox.html#a6b792fb245c1074761f59f124fe4bdca",tooltip="Creates an instance."];
+}

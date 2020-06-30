@@ -1,0 +1,20 @@
+digraph "OpenGLAssignment::Camera::get_projection"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="OpenGLAssignment::Camera\l::get_projection",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Gets the projection matrix."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="OpenGLAssignment::Skybox\l::render",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_skybox.html#a07051a43767a094b435fc295e2e363b5",tooltip="Render the skybox."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="OpenGLAssignment::Render\lTask::render",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_render_task.html#aae3febb180c4733187137cc8179f2824",tooltip="Render the scene."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="OpenGLAssignment::Scene\l::render",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_scene.html#af743cc56f5ea7486e4a6bbe5f8622932",tooltip="Render the scene."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="OpenGLAssignment::Scene::run",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_scene.html#a1c61c5bc598a3dd828f9457cf294b1bb",tooltip="Scene loop."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="OpenGLAssignment::Model\l::render",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_model.html#af4021e1dfe5581fe7f15c0ec8fae30a7",tooltip="Render the model."];
+}

@@ -1,0 +1,16 @@
+digraph "OpenGLAssignment::Light::render"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OpenGLAssignment::Light\l::render",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Render. Update the lights values."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="OpenGLAssignment::Light\l::get_ambient_intensity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_light.html#aad88e5ccf058bd43f0f042e1bae256a6",tooltip="Gets the ambient intensity."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="OpenGLAssignment::Light\l::get_intensity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_light.html#a1033f58922682a67a1fc7f851b9d4ceb",tooltip="Gets the light intensity."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="OpenGLAssignment::Camera\l::get_position",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_camera.html#ad5237426a12b4e9dbcb4f6c984f78b08",tooltip="Gets the position of the camera."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="OpenGLAssignment::Shader\lProgram::get_shader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_shader_program.html#ac6706fea0863820d3f5555875370248a",tooltip="Gets a shader program by its name."];
+}

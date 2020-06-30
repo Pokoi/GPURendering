@@ -1,0 +1,35 @@
+var class_open_g_l_assignment_1_1_texture =
+[
+    [ "Color", "class_open_g_l_assignment_1_1_texture.html#a09b67f29c4b9487cdf5f9d04e31c200c", null ],
+    [ "Parameter", "class_open_g_l_assignment_1_1_texture.html#a7e324666ab55e4919c48a9a8d6c3fb34", [
+      [ "REPEAT", "class_open_g_l_assignment_1_1_texture.html#a7e324666ab55e4919c48a9a8d6c3fb34a7b48975e09556e03bdedd99c742bb650", null ],
+      [ "MIRRORED", "class_open_g_l_assignment_1_1_texture.html#a7e324666ab55e4919c48a9a8d6c3fb34a4974f9a623c720f88d174beba8175158", null ],
+      [ "CLAMP_TO_EDGE", "class_open_g_l_assignment_1_1_texture.html#a7e324666ab55e4919c48a9a8d6c3fb34ac941d5e2c0244ae0c4846af9083b3823", null ],
+      [ "CLAMP_TO_BORDER", "class_open_g_l_assignment_1_1_texture.html#a7e324666ab55e4919c48a9a8d6c3fb34ae82931b000213ee9ef0f287fad040f78", null ],
+      [ "NEAR_PIXEL_FILTER", "class_open_g_l_assignment_1_1_texture.html#a7e324666ab55e4919c48a9a8d6c3fb34aa29a30f99e52e751b2d5302d8dcebbb6", null ],
+      [ "LINEAR_FILTER", "class_open_g_l_assignment_1_1_texture.html#a7e324666ab55e4919c48a9a8d6c3fb34a3b6fba613863750470efcf657ed6561c", null ],
+      [ "MIPMAP_NEAR_PIXEL_FILTER", "class_open_g_l_assignment_1_1_texture.html#a7e324666ab55e4919c48a9a8d6c3fb34a43ef5b143966bcb56ba2cd683a777ba2", null ],
+      [ "MIPMAP_LINEAR_FILTER", "class_open_g_l_assignment_1_1_texture.html#a7e324666ab55e4919c48a9a8d6c3fb34a72c3ff3e873105f04b5a5708d2beec04", null ]
+    ] ],
+    [ "Texture", "class_open_g_l_assignment_1_1_texture.html#a9576c78995ed8eb8a0153898ab0985c1", null ],
+    [ "Texture", "class_open_g_l_assignment_1_1_texture.html#ac4931511763e5866df47bd9ca0eab83a", null ],
+    [ "bind", "class_open_g_l_assignment_1_1_texture.html#ac1f099213d6644e6bb24ecd02d907718", null ],
+    [ "bits_per_color", "class_open_g_l_assignment_1_1_texture.html#aa1b6619d1ddc0bbca5b22799203bab0c", null ],
+    [ "colors", "class_open_g_l_assignment_1_1_texture.html#a157615090036ae8956601909a4775c58", null ],
+    [ "get_height", "class_open_g_l_assignment_1_1_texture.html#a1bb9ac697c653a819601164066e57253", null ],
+    [ "get_id", "class_open_g_l_assignment_1_1_texture.html#ab342a629607dc41e93f259a289819de4", null ],
+    [ "get_size", "class_open_g_l_assignment_1_1_texture.html#aa125c81f7a3ad3c66bcd2fd5ac0ee269", null ],
+    [ "get_width", "class_open_g_l_assignment_1_1_texture.html#acd7aea103a3e163e03bb4e238600a5b4", null ],
+    [ "load_texture", "class_open_g_l_assignment_1_1_texture.html#a051a270404e7f9aa7777c14d75dcf66b", null ],
+    [ "set_color", "class_open_g_l_assignment_1_1_texture.html#a17021a5aba36355c1bbde3577d50837b", null ],
+    [ "set_color", "class_open_g_l_assignment_1_1_texture.html#a15c59e1f91d35ad1fc4adc0699322ba9", null ],
+    [ "set_pixel", "class_open_g_l_assignment_1_1_texture.html#a3bb43d7c1018b80ef7d941a59726e1d4", null ],
+    [ "set_pixel", "class_open_g_l_assignment_1_1_texture.html#a64c8aefe3f642e9cab022af282a4f6ca", null ],
+    [ "size", "class_open_g_l_assignment_1_1_texture.html#a64fac2a0866d01a545bef0db91dd7b44", null ],
+    [ "unbind", "class_open_g_l_assignment_1_1_texture.html#a9ee5b0c5fb71fc205cf6ba49cc12f0d7", null ],
+    [ "color", "class_open_g_l_assignment_1_1_texture.html#a4e54fcbb023c826eef732b90f7afab0c", null ],
+    [ "height", "class_open_g_l_assignment_1_1_texture.html#af962da14fabd7438db5b87d3d34f4464", null ],
+    [ "id", "class_open_g_l_assignment_1_1_texture.html#a158ba8652167cfd8ecb2cd28b7e5c5d3", null ],
+    [ "texture_buffer", "class_open_g_l_assignment_1_1_texture.html#aca1d9c818f9eb23bbd690c99ca1bfd44", null ],
+    [ "width", "class_open_g_l_assignment_1_1_texture.html#af16af2de19ae74a68b150ba0c69041bb", null ]
+];

@@ -1,0 +1,160 @@
+.TH "OpenGLAssignment::Camera" 3 "Sun May 24 2020" "Jesús Fermín Villar Ramírez | OpenGLAssignment" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OpenGLAssignment::Camera
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Camera\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCamera\fP (float near_plane=0\&.1f, float far_plane=1000\&.f, float fov=90\&.f, float ratio=1\&.f)"
+.br
+.RI "Creates an instance\&. "
+.ti -1c
+.RI "glm::mat4 \fBget_projection\fP ()"
+.br
+.RI "Gets the projection matrix\&. "
+.ti -1c
+.RI "glm::mat4 \fBget_transform\fP ()"
+.br
+.RI "Gets the transformation of the camera\&. "
+.ti -1c
+.RI "glm::vec3 \fBget_position\fP ()"
+.br
+.RI "Gets the position of the camera\&. "
+.ti -1c
+.RI "void \fBupdate\fP (float delta)"
+.br
+.RI "Updates the camera position\&. "
+.ti -1c
+.RI "void \fBset_x_displacement\fP (float value)"
+.br
+.RI "Sets the x displacement for the camera movement\&. "
+.ti -1c
+.RI "void \fBset_y_displacement\fP (float value)"
+.br
+.RI "Sets the y displacement for the camera movement\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 39 of file Camera\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "OpenGLAssignment::Camera::Camera (float near_plane = \fC0\&.1f\fP, float far_plane = \fC1000\&.f\fP, float fov = \fC90\&.f\fP, float ratio = \fC1\&.f\fP)\fC [inline]\fP"
+
+.PP
+Creates an instance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInear_plane\fP The near plane to render 
+.br
+\fIfar_plane\fP The far plane to render 
+.br
+\fIfov\fP The field of view 
+.br
+\fIratio\fP The aspect ratio 
+.RE
+.PP
+
+.PP
+Definition at line 67 of file Camera\&.hpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "glm::vec3 OpenGLAssignment::Camera::get_position ()\fC [inline]\fP"
+
+.PP
+Gets the position of the camera\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The camera position 
+.RE
+.PP
+
+.PP
+Definition at line 102 of file Camera\&.hpp\&.
+.SS "glm::mat4 OpenGLAssignment::Camera::get_projection ()\fC [inline]\fP"
+
+.PP
+Gets the projection matrix\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The camera projection matrix 
+.RE
+.PP
+
+.PP
+Definition at line 84 of file Camera\&.hpp\&.
+.SS "glm::mat4 OpenGLAssignment::Camera::get_transform ()\fC [inline]\fP"
+
+.PP
+Gets the transformation of the camera\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The transformation matrix 
+.RE
+.PP
+
+.PP
+Definition at line 93 of file Camera\&.hpp\&.
+.SS "void OpenGLAssignment::Camera::set_x_displacement (float value)\fC [inline]\fP"
+
+.PP
+Sets the x displacement for the camera movement\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvalue\fP The displacement 
+.RE
+.PP
+
+.PP
+Definition at line 121 of file Camera\&.hpp\&.
+.SS "void OpenGLAssignment::Camera::set_y_displacement (float value)\fC [inline]\fP"
+
+.PP
+Sets the y displacement for the camera movement\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvalue\fP The displacement 
+.RE
+.PP
+
+.PP
+Definition at line 130 of file Camera\&.hpp\&.
+.SS "void OpenGLAssignment::Camera::update (float delta)\fC [inline]\fP"
+
+.PP
+Updates the camera position\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdelta\fP The time in seconds between fotograms 
+.RE
+.PP
+
+.PP
+Definition at line 111 of file Camera\&.hpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "float OpenGLAssignment::Camera::x_displacement = 0\&.f"
+
+.PP
+Definition at line 53 of file Camera\&.hpp\&.
+.SS "float OpenGLAssignment::Camera::y_displacement = 0\&.f"
+
+.PP
+Definition at line 54 of file Camera\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Jesús Fermín Villar Ramírez | OpenGLAssignment from the source code\&.

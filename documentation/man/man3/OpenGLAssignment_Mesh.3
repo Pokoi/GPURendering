@@ -1,0 +1,199 @@
+.TH "OpenGLAssignment::Mesh" 3 "Sun May 24 2020" "Jesús Fermín Villar Ramírez | OpenGLAssignment" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OpenGLAssignment::Mesh
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Mesh\&.hpp>\fP
+.PP
+Inherited by \fBOpenGLAssignment::ElevationMesh\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMesh\fP ()"
+.br
+.RI "Creates an instance\&. "
+.ti -1c
+.RI "\fBMesh\fP (std::string file_path)"
+.br
+.RI "Creates an instance from a \&.obj file\&. "
+.ti -1c
+.RI "virtual void \fBrender\fP ()"
+.br
+.RI "Render the mesh\&. "
+.ti -1c
+.RI "void \fBset_vao\fP (std::shared_ptr< \fBVertexArrayObject\fP > new_vao)"
+.br
+.RI "Set the VAO of the mesh\&. "
+.ti -1c
+.RI "void \fBset_vertex\fP (std::shared_ptr< \fBVertexBufferObject\fP > vertex)"
+.br
+.RI "Set the vertex coordinates information\&. "
+.ti -1c
+.RI "void \fBset_texcoord\fP (std::shared_ptr< \fBVertexBufferObject\fP > texcoord)"
+.br
+.RI "Set the texture coordinates information\&. "
+.ti -1c
+.RI "void \fBset_normals\fP (std::shared_ptr< \fBVertexBufferObject\fP > normals)"
+.br
+.RI "Set the normals information\&. "
+.ti -1c
+.RI "void \fBset_indices\fP (std::shared_ptr< \fBVertexBufferObject\fP > \fBindices\fP)"
+.br
+.RI "Set the indices information\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::shared_ptr< \fBVertexArrayObject\fP > \fBvao\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBVertexBufferObject\fP > \fBvertex_buffer\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBVertexBufferObject\fP > \fBtexcoord_buffer\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBVertexBufferObject\fP > \fBnormals_buffer\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBVertexBufferObject\fP > \fBindices_buffer\fP"
+.br
+.ti -1c
+.RI "std::vector< GLubyte > \fBindices\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 45 of file Mesh\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "OpenGLAssignment::Mesh::Mesh ()\fC [inline]\fP"
+
+.PP
+Creates an instance\&. 
+.PP
+Definition at line 67 of file Mesh\&.hpp\&.
+.SS "OpenGLAssignment::Mesh::Mesh (std::string file_path)"
+
+.PP
+Creates an instance from a \&.obj file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfile_path\fP The path of the obj file 
+.RE
+.PP
+
+.PP
+Definition at line 36 of file Mesh\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void OpenGLAssignment::Mesh::render ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Render the mesh\&. 
+.PP
+Reimplemented in \fBOpenGLAssignment::ElevationMesh\fP\&.
+.PP
+Definition at line 79 of file Mesh\&.hpp\&.
+.SS "void OpenGLAssignment::Mesh::set_indices (std::shared_ptr< \fBVertexBufferObject\fP > indices)\fC [inline]\fP"
+
+.PP
+Set the indices information\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIindices\fP The indices data 
+.RE
+.PP
+
+.PP
+Definition at line 125 of file Mesh\&.hpp\&.
+.SS "void OpenGLAssignment::Mesh::set_normals (std::shared_ptr< \fBVertexBufferObject\fP > normals)\fC [inline]\fP"
+
+.PP
+Set the normals information\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInormals\fP The normals data 
+.RE
+.PP
+
+.PP
+Definition at line 116 of file Mesh\&.hpp\&.
+.SS "void OpenGLAssignment::Mesh::set_texcoord (std::shared_ptr< \fBVertexBufferObject\fP > texcoord)\fC [inline]\fP"
+
+.PP
+Set the texture coordinates information\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItextcoord\fP The texture coordinates data 
+.RE
+.PP
+
+.PP
+Definition at line 107 of file Mesh\&.hpp\&.
+.SS "void OpenGLAssignment::Mesh::set_vao (std::shared_ptr< \fBVertexArrayObject\fP > new_vao)\fC [inline]\fP"
+
+.PP
+Set the VAO of the mesh\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInew_vao\fP The vao to set 
+.RE
+.PP
+
+.PP
+Definition at line 89 of file Mesh\&.hpp\&.
+.SS "void OpenGLAssignment::Mesh::set_vertex (std::shared_ptr< \fBVertexBufferObject\fP > vertex)\fC [inline]\fP"
+
+.PP
+Set the vertex coordinates information\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvertex\fP The vertex coordinates data 
+.RE
+.PP
+
+.PP
+Definition at line 98 of file Mesh\&.hpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<GLubyte> OpenGLAssignment::Mesh::indices\fC [protected]\fP"
+
+.PP
+Definition at line 60 of file Mesh\&.hpp\&.
+.SS "std::shared_ptr<\fBVertexBufferObject\fP> OpenGLAssignment::Mesh::indices_buffer\fC [protected]\fP"
+
+.PP
+Definition at line 58 of file Mesh\&.hpp\&.
+.SS "std::shared_ptr<\fBVertexBufferObject\fP> OpenGLAssignment::Mesh::normals_buffer\fC [protected]\fP"
+
+.PP
+Definition at line 56 of file Mesh\&.hpp\&.
+.SS "std::shared_ptr<\fBVertexBufferObject\fP> OpenGLAssignment::Mesh::texcoord_buffer\fC [protected]\fP"
+
+.PP
+Definition at line 54 of file Mesh\&.hpp\&.
+.SS "std::shared_ptr<\fBVertexArrayObject\fP> OpenGLAssignment::Mesh::vao\fC [protected]\fP"
+
+.PP
+Definition at line 50 of file Mesh\&.hpp\&.
+.SS "std::shared_ptr<\fBVertexBufferObject\fP> OpenGLAssignment::Mesh::vertex_buffer\fC [protected]\fP"
+
+.PP
+Definition at line 52 of file Mesh\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Jesús Fermín Villar Ramírez | OpenGLAssignment from the source code\&.

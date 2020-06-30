@@ -1,0 +1,387 @@
+.TH "OpenGLAssignment::Texture" 3 "Sun May 24 2020" "Jesús Fermín Villar Ramírez | OpenGLAssignment" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OpenGLAssignment::Texture
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Texture\&.hpp>\fP
+.PP
+Inherited by \fBOpenGLAssignment::Texture2D\fP, and \fBOpenGLAssignment::TextureCubemap\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBParameter\fP { \fBREPEAT\fP = GL_REPEAT, \fBMIRRORED\fP = GL_MIRRORED_REPEAT, \fBCLAMP_TO_EDGE\fP = GL_CLAMP_TO_EDGE, \fBCLAMP_TO_BORDER\fP = GL_CLAMP_TO_BORDER, \fBNEAR_PIXEL_FILTER\fP = GL_NEAREST, \fBLINEAR_FILTER\fP = GL_LINEAR, \fBMIPMAP_NEAR_PIXEL_FILTER\fP = GL_LINEAR_MIPMAP_NEAREST, \fBMIPMAP_LINEAR_FILTER\fP = GL_LINEAR_MIPMAP_LINEAR }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTexture\fP ()"
+.br
+.RI "Creates an instance\&. "
+.ti -1c
+.RI "\fBTexture\fP (unsigned int \fBwidth\fP, unsigned int \fBheight\fP)"
+.br
+.RI "Creates an instance\&. "
+.ti -1c
+.RI "virtual std::shared_ptr< \fBTexture\fP > \fBload_texture\fP (std::string path, \fBParameter\fP wrap, \fBParameter\fP filter)"
+.br
+.RI "Load a texture file\&. "
+.ti -1c
+.RI "virtual void \fBbind\fP ()"
+.br
+.RI "Binds the texture to use it\&. "
+.ti -1c
+.RI "virtual void \fBunbind\fP ()"
+.br
+.RI "Unbinds the texture before use it\&. "
+.ti -1c
+.RI "size_t \fBget_size\fP ()"
+.br
+.RI "Gets the size of the texture buffer\&. "
+.ti -1c
+.RI "GLenum \fBget_id\fP ()"
+.br
+.RI "Gets the id of the texture\&. "
+.ti -1c
+.RI "unsigned int \fBget_width\fP ()"
+.br
+.RI "Gets the width of the texture\&. "
+.ti -1c
+.RI "unsigned int \fBget_height\fP ()"
+.br
+.RI "Gets the height of the texture\&. "
+.ti -1c
+.RI "\fBColor\fP * \fBcolors\fP ()"
+.br
+.RI "Gets a pointer to the first element in the texture buffer\&. "
+.ti -1c
+.RI "int \fBbits_per_color\fP ()"
+.br
+.RI "Gets the bits per color\&. "
+.ti -1c
+.RI "size_t \fBsize\fP ()"
+.br
+.RI "Gets the size of the buffer\&. "
+.ti -1c
+.RI "void \fBset_color\fP (int r, int g, int b)"
+.br
+.RI "Set the color\&. "
+.ti -1c
+.RI "void \fBset_color\fP (\fBColor\fP &new_color)"
+.br
+.RI "Set the color\&. "
+.ti -1c
+.RI "void \fBset_pixel\fP (size_t offset)"
+.br
+.RI "Set a pixel\&. "
+.ti -1c
+.RI "void \fBset_pixel\fP (int x, int y)"
+.br
+.RI "Set a pixel\&. "
+.in -1c
+.SS "Protected Types"
+
+.in +1c
+.ti -1c
+.RI "typedef \fBColorRGBA8888\fP \fBColor\fP"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "GLenum \fBid\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBColorRGBA8888\fP > \fBtexture_buffer\fP"
+.br
+.ti -1c
+.RI "\fBColor\fP \fBcolor\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBwidth\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBheight\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 42 of file Texture\&.hpp\&.
+.SH "Member Typedef Documentation"
+.PP 
+.SS "typedef \fBColorRGBA8888\fP \fBOpenGLAssignment::Texture::Color\fP\fC [protected]\fP"
+
+.PP
+Definition at line 63 of file Texture\&.hpp\&.
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBOpenGLAssignment::Texture::Parameter\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIREPEAT \fP\fP
+.TP
+\fB\fIMIRRORED \fP\fP
+.TP
+\fB\fICLAMP_TO_EDGE \fP\fP
+.TP
+\fB\fICLAMP_TO_BORDER \fP\fP
+.TP
+\fB\fINEAR_PIXEL_FILTER \fP\fP
+.TP
+\fB\fILINEAR_FILTER \fP\fP
+.TP
+\fB\fIMIPMAP_NEAR_PIXEL_FILTER \fP\fP
+.TP
+\fB\fIMIPMAP_LINEAR_FILTER \fP\fP
+.PP
+Definition at line 46 of file Texture\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "OpenGLAssignment::Texture::Texture ()\fC [inline]\fP"
+
+.PP
+Creates an instance\&. 
+.PP
+Definition at line 80 of file Texture\&.hpp\&.
+.SS "OpenGLAssignment::Texture::Texture (unsigned int width, unsigned int height)\fC [inline]\fP"
+
+.PP
+Creates an instance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwidth\fP The width of the texture 
+.br
+\fIheight\fP The height of the texture 
+.RE
+.PP
+
+.PP
+Definition at line 88 of file Texture\&.hpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void OpenGLAssignment::Texture::bind ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Binds the texture to use it\&. 
+.PP
+Reimplemented in \fBOpenGLAssignment::Texture2D\fP, and \fBOpenGLAssignment::TextureCubemap\fP\&.
+.PP
+Definition at line 116 of file Texture\&.hpp\&.
+.SS "int OpenGLAssignment::Texture::bits_per_color ()\fC [inline]\fP"
+
+.PP
+Gets the bits per color\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The bits per color 
+.RE
+.PP
+
+.PP
+Definition at line 174 of file Texture\&.hpp\&.
+.SS "\fBColor\fP* OpenGLAssignment::Texture::colors ()\fC [inline]\fP"
+
+.PP
+Gets a pointer to the first element in the texture buffer\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A pointer to the first elemen in buffer 
+.RE
+.PP
+
+.PP
+Definition at line 165 of file Texture\&.hpp\&.
+.SS "unsigned int OpenGLAssignment::Texture::get_height ()\fC [inline]\fP"
+
+.PP
+Gets the height of the texture\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The height of the texture 
+.RE
+.PP
+
+.PP
+Definition at line 154 of file Texture\&.hpp\&.
+.SS "GLenum OpenGLAssignment::Texture::get_id ()\fC [inline]\fP"
+
+.PP
+Gets the id of the texture\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The id 
+.RE
+.PP
+
+.PP
+Definition at line 136 of file Texture\&.hpp\&.
+.SS "size_t OpenGLAssignment::Texture::get_size ()\fC [inline]\fP"
+
+.PP
+Gets the size of the texture buffer\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The texture buffer size 
+.RE
+.PP
+
+.PP
+Definition at line 127 of file Texture\&.hpp\&.
+.SS "unsigned int OpenGLAssignment::Texture::get_width ()\fC [inline]\fP"
+
+.PP
+Gets the width of the texture\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The texture width 
+.RE
+.PP
+
+.PP
+Definition at line 145 of file Texture\&.hpp\&.
+.SS "virtual std::shared_ptr<\fBTexture\fP> OpenGLAssignment::Texture::load_texture (std::string path, \fBParameter\fP wrap, \fBParameter\fP filter)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Load a texture file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP The path of the file 
+.br
+\fIwrap\fP The wrap parameter 
+.br
+\fIfilter\fP The filter parameter 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The texture 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBOpenGLAssignment::Texture2D\fP\&.
+.PP
+Definition at line 104 of file Texture\&.hpp\&.
+.SS "void OpenGLAssignment::Texture::set_color (\fBColor\fP & new_color)\fC [inline]\fP"
+
+.PP
+Set the color\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInew_color\fP The color to set 
+.RE
+.PP
+
+.PP
+Definition at line 206 of file Texture\&.hpp\&.
+.SS "void OpenGLAssignment::Texture::set_color (int r, int g, int b)\fC [inline]\fP"
+
+.PP
+Set the color\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIr\fP The r component to set 
+.br
+\fIg\fP The g component to set 
+.br
+\fIb\fP The b component to set 
+.RE
+.PP
+
+.PP
+Definition at line 194 of file Texture\&.hpp\&.
+.SS "void OpenGLAssignment::Texture::set_pixel (int x, int y)\fC [inline]\fP"
+
+.PP
+Set a pixel\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP The x coordinate of the pixel 
+.br
+\fIy\fP The y coordinate of the pixel 
+.RE
+.PP
+
+.PP
+Definition at line 225 of file Texture\&.hpp\&.
+.SS "void OpenGLAssignment::Texture::set_pixel (size_t offset)\fC [inline]\fP"
+
+.PP
+Set a pixel\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIoffset\fP The pixel 
+.RE
+.PP
+
+.PP
+Definition at line 215 of file Texture\&.hpp\&.
+.SS "size_t OpenGLAssignment::Texture::size ()\fC [inline]\fP"
+
+.PP
+Gets the size of the buffer\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The size of the buffer 
+.RE
+.PP
+
+.PP
+Definition at line 183 of file Texture\&.hpp\&.
+.SS "virtual void OpenGLAssignment::Texture::unbind ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Unbinds the texture before use it\&. 
+.PP
+Reimplemented in \fBOpenGLAssignment::Texture2D\fP, and \fBOpenGLAssignment::TextureCubemap\fP\&.
+.PP
+Definition at line 121 of file Texture\&.hpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBColor\fP OpenGLAssignment::Texture::color\fC [protected]\fP"
+
+.PP
+Definition at line 69 of file Texture\&.hpp\&.
+.SS "unsigned int OpenGLAssignment::Texture::height\fC [protected]\fP"
+
+.PP
+Definition at line 73 of file Texture\&.hpp\&.
+.SS "GLenum OpenGLAssignment::Texture::id\fC [protected]\fP"
+
+.PP
+Definition at line 65 of file Texture\&.hpp\&.
+.SS "std::vector<\fBColorRGBA8888\fP> OpenGLAssignment::Texture::texture_buffer\fC [protected]\fP"
+
+.PP
+Definition at line 67 of file Texture\&.hpp\&.
+.SS "unsigned int OpenGLAssignment::Texture::width\fC [protected]\fP"
+
+.PP
+Definition at line 71 of file Texture\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Jesús Fermín Villar Ramírez | OpenGLAssignment from the source code\&.

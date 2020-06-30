@@ -1,0 +1,86 @@
+.TH "OpenGLAssignment::Framebuffer" 3 "Sun May 24 2020" "Jesús Fermín Villar Ramírez | OpenGLAssignment" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OpenGLAssignment::Framebuffer
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Framebuffer\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFramebuffer\fP (unsigned int width, unsigned int height, std::string shader)"
+.br
+.RI "Creates an instance\&. "
+.ti -1c
+.RI "void \fBbind\fP ()"
+.br
+.RI "Binds the framebuffer to use it\&. "
+.ti -1c
+.RI "void \fBunbind\fP ()"
+.br
+.RI "Unbinds the framebuffer before use it\&. "
+.ti -1c
+.RI "void \fBbuild\fP ()"
+.br
+.RI "Generates the framebuffer\&. "
+.ti -1c
+.RI "void \fBrender\fP ()"
+.br
+.RI "Render the framebuffer\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 38 of file Framebuffer\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "OpenGLAssignment::Framebuffer::Framebuffer (unsigned int width, unsigned int height, std::string shader)"
+
+.PP
+Creates an instance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwidth\fP The width of the buffer 
+.br
+\fIheight\fP The height of the buffer 
+.br
+\fIshader\fP The shader 
+.RE
+.PP
+
+.PP
+Definition at line 36 of file Framebuffer\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void OpenGLAssignment::Framebuffer::bind ()\fC [inline]\fP"
+
+.PP
+Binds the framebuffer to use it\&. 
+.PP
+Definition at line 67 of file Framebuffer\&.hpp\&.
+.SS "void OpenGLAssignment::Framebuffer::build ()"
+
+.PP
+Generates the framebuffer\&. 
+.PP
+Definition at line 42 of file Framebuffer\&.cpp\&.
+.SS "void OpenGLAssignment::Framebuffer::render ()"
+
+.PP
+Render the framebuffer\&. 
+.PP
+Definition at line 117 of file Framebuffer\&.cpp\&.
+.SS "void OpenGLAssignment::Framebuffer::unbind ()\fC [inline]\fP"
+
+.PP
+Unbinds the framebuffer before use it\&. 
+.PP
+Definition at line 75 of file Framebuffer\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Jesús Fermín Villar Ramírez | OpenGLAssignment from the source code\&.

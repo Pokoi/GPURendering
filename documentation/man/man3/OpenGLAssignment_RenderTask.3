@@ -1,0 +1,145 @@
+.TH "OpenGLAssignment::RenderTask" 3 "Sun May 24 2020" "Jesús Fermín Villar Ramírez | OpenGLAssignment" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OpenGLAssignment::RenderTask
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <RenderTask\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRenderTask\fP (\fBCamera\fP &camera, unsigned int width, unsigned int height)"
+.br
+.RI "Creates an instance\&. "
+.ti -1c
+.RI "void \fBrender\fP ()"
+.br
+.RI "Render the scene\&. "
+.ti -1c
+.RI "void \fBtoggle_postproccess\fP ()"
+.br
+.RI "Activates or inactivates the postproccess in a switch way\&. "
+.ti -1c
+.RI "void \fBadd_opaque_model\fP (std::string name, std::shared_ptr< \fBModel\fP > model)"
+.br
+.RI "Adds an opaque model to the collection\&. "
+.ti -1c
+.RI "void \fBadd_transparent_model\fP (std::string name, std::shared_ptr< \fBModel\fP > model)"
+.br
+.RI "Adds a transparent model to the collection\&. "
+.ti -1c
+.RI "void \fBadd_light\fP (\fBLight\fP &light)"
+.br
+.RI "Adds a light to the scene\&. "
+.ti -1c
+.RI "std::shared_ptr< \fBModel\fP > & \fBget_model\fP (std::string name, bool opaque)"
+.br
+.RI "Gets a model by name\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 44 of file RenderTask\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "OpenGLAssignment::RenderTask::RenderTask (\fBCamera\fP & camera, unsigned int width, unsigned int height)"
+
+.PP
+Creates an instance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcamera\fP A reference to the camera of the scene 
+.br
+\fIwidth\fP The width of the view 
+.br
+\fIheight\fP The height of the view 
+.RE
+.PP
+
+.PP
+Definition at line 40 of file RenderTask\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void OpenGLAssignment::RenderTask::add_light (\fBLight\fP & light)\fC [inline]\fP"
+
+.PP
+Adds a light to the scene\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlight\fP The light to add 
+.RE
+.PP
+
+.PP
+Definition at line 113 of file RenderTask\&.hpp\&.
+.SS "void OpenGLAssignment::RenderTask::add_opaque_model (std::string name, std::shared_ptr< \fBModel\fP > model)\fC [inline]\fP"
+
+.PP
+Adds an opaque model to the collection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP The name of the model 
+.br
+\fImodel\fP The model to add 
+.RE
+.PP
+
+.PP
+Definition at line 94 of file RenderTask\&.hpp\&.
+.SS "void OpenGLAssignment::RenderTask::add_transparent_model (std::string name, std::shared_ptr< \fBModel\fP > model)\fC [inline]\fP"
+
+.PP
+Adds a transparent model to the collection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP The name of the model 
+.br
+\fImodel\fP The model to add 
+.RE
+.PP
+
+.PP
+Definition at line 104 of file RenderTask\&.hpp\&.
+.SS "std::shared_ptr<\fBModel\fP>& OpenGLAssignment::RenderTask::get_model (std::string name, bool opaque)\fC [inline]\fP"
+
+.PP
+Gets a model by name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP The name of the model 
+.br
+\fIopaque\fP If the model is opaque or transparent\&. True = opaque, false = transparen 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to the desired model 
+.RE
+.PP
+
+.PP
+Definition at line 124 of file RenderTask\&.hpp\&.
+.SS "void OpenGLAssignment::RenderTask::render ()"
+
+.PP
+Render the scene\&. 
+.PP
+Definition at line 62 of file RenderTask\&.cpp\&.
+.SS "void OpenGLAssignment::RenderTask::toggle_postproccess ()\fC [inline]\fP"
+
+.PP
+Activates or inactivates the postproccess in a switch way\&. 
+.PP
+Definition at line 84 of file RenderTask\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Jesús Fermín Villar Ramírez | OpenGLAssignment from the source code\&.

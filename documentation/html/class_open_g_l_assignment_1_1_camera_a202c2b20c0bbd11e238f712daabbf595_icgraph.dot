@@ -1,0 +1,14 @@
+digraph "OpenGLAssignment::Camera::set_x_displacement"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="OpenGLAssignment::Camera\l::set_x_displacement",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Sets the x displacement for the camera movement."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="OpenGLAssignment::Scene\l::input",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_scene.html#ac66d43850a7944f5ad41188af06647dc",tooltip="Handle the input."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="OpenGLAssignment::Scene::run",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_scene.html#a1c61c5bc598a3dd828f9457cf294b1bb",tooltip="Scene loop."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip=" "];
+}

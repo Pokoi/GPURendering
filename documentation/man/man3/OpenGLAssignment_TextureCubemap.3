@@ -1,0 +1,101 @@
+.TH "OpenGLAssignment::TextureCubemap" 3 "Sun May 24 2020" "Jesús Fermín Villar Ramírez | OpenGLAssignment" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OpenGLAssignment::TextureCubemap
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <TextureCubemap\&.hpp>\fP
+.PP
+Inherits \fBOpenGLAssignment::Texture\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTextureCubemap\fP (std::string path)"
+.br
+.RI "Creates an instance\&. "
+.ti -1c
+.RI "\fB~TextureCubemap\fP ()"
+.br
+.RI "Frees the memory\&. "
+.ti -1c
+.RI "std::shared_ptr< \fBTexture\fP > \fBload_texture\fP (std::string path)"
+.br
+.RI "Load a texture\&. "
+.ti -1c
+.RI "void \fBbind\fP () override"
+.br
+.RI "Binds a texture to use it\&. "
+.ti -1c
+.RI "void \fBunbind\fP () override"
+.br
+.RI "Unbinds a texture before use it\&. "
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 41 of file TextureCubemap\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "OpenGLAssignment::TextureCubemap::TextureCubemap (std::string path)"
+
+.PP
+Creates an instance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP The path of the texture 
+.RE
+.PP
+
+.PP
+Definition at line 34 of file TextureCubemap\&.cpp\&.
+.SS "OpenGLAssignment::TextureCubemap::~TextureCubemap ()\fC [inline]\fP"
+
+.PP
+Frees the memory\&. 
+.PP
+Definition at line 54 of file TextureCubemap\&.hpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void OpenGLAssignment::TextureCubemap::bind ()\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Binds a texture to use it\&. 
+.PP
+Reimplemented from \fBOpenGLAssignment::Texture\fP\&.
+.PP
+Definition at line 98 of file TextureCubemap\&.hpp\&.
+.SS "std::shared_ptr<\fBTexture\fP> OpenGLAssignment::TextureCubemap::load_texture (std::string path)\fC [inline]\fP"
+
+.PP
+Load a texture\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP The file path of the texture 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The texture 
+.RE
+.PP
+
+.PP
+Definition at line 66 of file TextureCubemap\&.hpp\&.
+.SS "void OpenGLAssignment::TextureCubemap::unbind ()\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Unbinds a texture before use it\&. 
+.PP
+Reimplemented from \fBOpenGLAssignment::Texture\fP\&.
+.PP
+Definition at line 106 of file TextureCubemap\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Jesús Fermín Villar Ramírez | OpenGLAssignment from the source code\&.

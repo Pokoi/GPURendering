@@ -1,0 +1,20 @@
+digraph "OpenGLAssignment::Texture::Texture"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="OpenGLAssignment::Texture\l::Texture",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Creates an instance."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="OpenGLAssignment::Texture\lCubemap::load_texture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_texture_cubemap.html#a76cf001d440656dd70a635f00bdf71cc",tooltip="Load a texture."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="OpenGLAssignment::Texture\lCubemap::TextureCubemap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_texture_cubemap.html#a14dfb410148a9042c116ec121c3caefd",tooltip="Creates an instance."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="OpenGLAssignment::Texture2\lD::load_texture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_texture2_d.html#a019dd7258651cbf9ed9c92b8192e190f",tooltip="Load a texture file."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="OpenGLAssignment::Texture2\lD::Texture2D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_texture2_d.html#ada372436d00df700467ad427c5377006",tooltip="Creates an instance."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="OpenGLAssignment::Texture2\lD::get_texture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_texture2_d.html#af5584d35df5a3406478759cd17bf13f8",tooltip="Get a texture by its path."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="OpenGLAssignment::Material\l::Material",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_material.html#ac9a9ee53af3c678aa2f414a6aca80d09",tooltip="Creates an instance."];
+}

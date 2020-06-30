@@ -1,0 +1,190 @@
+.TH "OpenGLAssignment::Material" 3 "Sun May 24 2020" "Jesús Fermín Villar Ramírez | OpenGLAssignment" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OpenGLAssignment::Material
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Material\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMaterial\fP (std::shared_ptr< \fBShaderProgram\fP > &shader_program)"
+.br
+.RI "Creates an instance\&. "
+.ti -1c
+.RI "\fBMaterial\fP (std::string shader_name, std::string vertex_path, std::string fragment_path, std::string texture_path)"
+.br
+.RI "Creates an instance\&. "
+.ti -1c
+.RI "void \fBuse\fP ()"
+.br
+.RI "Use the material\&. "
+.ti -1c
+.RI "std::shared_ptr< \fBShaderProgram\fP > \fBget_shader\fP ()"
+.br
+.RI "Get the shader program of the material\&. "
+.ti -1c
+.RI "std::shared_ptr< \fBTexture\fP > \fBget_texture\fP ()"
+.br
+.RI "Get the texture of the material\&. "
+.ti -1c
+.RI "glm::vec3 \fBget_color\fP ()"
+.br
+.RI "Gets the base color\&. "
+.ti -1c
+.RI "void \fBset_color\fP (glm::vec3 color)"
+.br
+.RI "Sets the material color\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static std::shared_ptr< \fBMaterial\fP > \fBget\fP (std::string shader_name, std::string vertex_path, std::string fragment_path, glm::vec3 color={ 1, 1, 1 }, std::string texture_path='\&.\&./\&.\&./assets/textures/default\&.tga')"
+.br
+.RI "Gets a \fBMaterial\fP from the factory\&. Creates one if the desired does not exist\&. "
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static std::map< std::string, std::shared_ptr< \fBMaterial\fP > > \fBfactory\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 39 of file Material\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "OpenGLAssignment::Material::Material (std::shared_ptr< \fBShaderProgram\fP > & shader_program)\fC [inline]\fP"
+
+.PP
+Creates an instance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshader_program\fP The shader program of the material 
+.RE
+.PP
+
+.PP
+Definition at line 89 of file Material\&.hpp\&.
+.SS "OpenGLAssignment::Material::Material (std::string shader_name, std::string vertex_path, std::string fragment_path, std::string texture_path)\fC [inline]\fP"
+
+.PP
+Creates an instance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshader_name\fP The shader program of the material 
+.br
+\fIvertex_path\fP The path of the vertex shader 
+.br
+\fIfragment_path\fP The path of the fragment shader 
+.br
+\fItexture_path\fP The path of the texture 
+.RE
+.PP
+
+.PP
+Definition at line 99 of file Material\&.hpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "static std::shared_ptr<\fBMaterial\fP> OpenGLAssignment::Material::get (std::string shader_name, std::string vertex_path, std::string fragment_path, glm::vec3 color = \fC{ 1,1,1 }\fP, std::string texture_path = \fC'\&.\&./\&.\&./assets/textures/default\&.tga'\fP)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Gets a \fBMaterial\fP from the factory\&. Creates one if the desired does not exist\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshader_name\fP The name of the shader 
+.br
+\fIvertex_path\fP The path of the vertex shader 
+.br
+\fIfragment_path\fP The path of the fragment_shader 
+.br
+\fIcolor\fP The base color 
+.br
+\fItexture_path\fP The path of the texture 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The material 
+.RE
+.PP
+
+.PP
+Definition at line 61 of file Material\&.hpp\&.
+.SS "glm::vec3 OpenGLAssignment::Material::get_color ()\fC [inline]\fP"
+
+.PP
+Gets the base color\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The material base color 
+.RE
+.PP
+
+.PP
+Definition at line 141 of file Material\&.hpp\&.
+.SS "std::shared_ptr<\fBShaderProgram\fP> OpenGLAssignment::Material::get_shader ()\fC [inline]\fP"
+
+.PP
+Get the shader program of the material\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The shader program 
+.RE
+.PP
+
+.PP
+Definition at line 123 of file Material\&.hpp\&.
+.SS "std::shared_ptr<\fBTexture\fP> OpenGLAssignment::Material::get_texture ()\fC [inline]\fP"
+
+.PP
+Get the texture of the material\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The material texture 
+.RE
+.PP
+
+.PP
+Definition at line 132 of file Material\&.hpp\&.
+.SS "void OpenGLAssignment::Material::set_color (glm::vec3 color)\fC [inline]\fP"
+
+.PP
+Sets the material color\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcolor\fP The color to set 
+.RE
+.PP
+
+.PP
+Definition at line 150 of file Material\&.hpp\&.
+.SS "void OpenGLAssignment::Material::use ()\fC [inline]\fP"
+
+.PP
+Use the material\&. 
+.PP
+Definition at line 114 of file Material\&.hpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::map< std::string, std::shared_ptr< \fBMaterial\fP > > OpenGLAssignment::Material::factory\fC [static]\fP"
+
+.PP
+Definition at line 50 of file Material\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Jesús Fermín Villar Ramírez | OpenGLAssignment from the source code\&.

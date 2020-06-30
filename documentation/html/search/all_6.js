@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['g_38',['g',['../union_open_g_l_assignment_1_1_color_r_g_b_a8888_1_1_data.html#a768292cdc27ef1093a3cef846a261f8d',1,'OpenGLAssignment::ColorRGBA8888::Data']]],
+  ['get_39',['get',['../class_open_g_l_assignment_1_1_material.html#a5bfa0d378508f131d23de634d4ef18fa',1,'OpenGLAssignment::Material']]],
+  ['get_5fambient_5fintensity_40',['get_ambient_intensity',['../class_open_g_l_assignment_1_1_light.html#aad88e5ccf058bd43f0f042e1bae256a6',1,'OpenGLAssignment::Light']]],
+  ['get_5fcolor_41',['get_color',['../class_open_g_l_assignment_1_1_light.html#a88d9d3a77a01cea670844ae8087e46a7',1,'OpenGLAssignment::Light::get_color()'],['../class_open_g_l_assignment_1_1_material.html#a5b71ec64bd1816694d72ce65a10491ff',1,'OpenGLAssignment::Material::get_color()']]],
+  ['get_5felement_5ftype_42',['get_element_type',['../class_open_g_l_assignment_1_1_vertex_buffer_object.html#aafc854bcdb62703232aae732e79bfcd4',1,'OpenGLAssignment::VertexBufferObject']]],
+  ['get_5fheight_43',['get_height',['../class_open_g_l_assignment_1_1_texture.html#a1bb9ac697c653a819601164066e57253',1,'OpenGLAssignment::Texture::get_height()'],['../class_open_g_l_assignment_1_1_window.html#aee030efc1caf83e61bfb3a7c3ec8327e',1,'OpenGLAssignment::Window::get_height()']]],
+  ['get_5fid_44',['get_id',['../class_open_g_l_assignment_1_1_texture.html#ab342a629607dc41e93f259a289819de4',1,'OpenGLAssignment::Texture']]],
+  ['get_5fintensity_45',['get_intensity',['../class_open_g_l_assignment_1_1_light.html#a1033f58922682a67a1fc7f851b9d4ceb',1,'OpenGLAssignment::Light']]],
+  ['get_5fmaterial_46',['get_material',['../class_open_g_l_assignment_1_1_model.html#aae44695182dfdaa41fda0729e5e0229c',1,'OpenGLAssignment::Model']]],
+  ['get_5fmodel_47',['get_model',['../class_open_g_l_assignment_1_1_render_task.html#a892f762eaef442d313288e6098af3efa',1,'OpenGLAssignment::RenderTask']]],
+  ['get_5fposition_48',['get_position',['../class_open_g_l_assignment_1_1_camera.html#ad5237426a12b4e9dbcb4f6c984f78b08',1,'OpenGLAssignment::Camera::get_position()'],['../class_open_g_l_assignment_1_1_model.html#a744c1c58a59f53ce2c43e2986fbf3b74',1,'OpenGLAssignment::Model::get_position()']]],
+  ['get_5fprojection_49',['get_projection',['../class_open_g_l_assignment_1_1_camera.html#a97eb21d9be18383c28b100adda7e078c',1,'OpenGLAssignment::Camera']]],
+  ['get_5fshader_50',['get_shader',['../class_open_g_l_assignment_1_1_material.html#ae957406928330f7ecf769470ac077629',1,'OpenGLAssignment::Material::get_shader()'],['../class_open_g_l_assignment_1_1_shader_program.html#ac6706fea0863820d3f5555875370248a',1,'OpenGLAssignment::ShaderProgram::get_shader()']]],
+  ['get_5fsize_51',['get_size',['../class_open_g_l_assignment_1_1_texture.html#aa125c81f7a3ad3c66bcd2fd5ac0ee269',1,'OpenGLAssignment::Texture']]],
+  ['get_5ftexture_52',['get_texture',['../class_open_g_l_assignment_1_1_material.html#a167f1a63886cf108d5077cefd8ed1c9b',1,'OpenGLAssignment::Material::get_texture()'],['../class_open_g_l_assignment_1_1_texture2_d.html#af5584d35df5a3406478759cd17bf13f8',1,'OpenGLAssignment::Texture2D::get_texture()']]],
+  ['get_5ftransform_53',['get_transform',['../class_open_g_l_assignment_1_1_camera.html#a70061e13d0871a44e54af94a8959da24',1,'OpenGLAssignment::Camera::get_transform()'],['../class_open_g_l_assignment_1_1_model.html#a52b579446cf11acc7fb00ef2c76d57fa',1,'OpenGLAssignment::Model::get_transform()']]],
+  ['get_5funiform_5flocation_54',['get_uniform_location',['../class_open_g_l_assignment_1_1_shader_program.html#a51d455c9adca1e46b31dd690298620b7',1,'OpenGLAssignment::ShaderProgram']]],
+  ['get_5fvertex_5fattrib_5flocation_55',['get_vertex_attrib_location',['../class_open_g_l_assignment_1_1_shader_program.html#a806c88ab9e7f41a00d08c1b100a0e92c',1,'OpenGLAssignment::ShaderProgram']]],
+  ['get_5fwidth_56',['get_width',['../class_open_g_l_assignment_1_1_texture.html#acd7aea103a3e163e03bb4e238600a5b4',1,'OpenGLAssignment::Texture::get_width()'],['../class_open_g_l_assignment_1_1_window.html#a80e82dabf7727738d93c1ab3221c8e05',1,'OpenGLAssignment::Window::get_width()']]]
+];

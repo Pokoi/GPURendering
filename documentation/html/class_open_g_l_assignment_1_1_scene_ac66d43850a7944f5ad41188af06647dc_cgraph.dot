@@ -1,0 +1,16 @@
+digraph "OpenGLAssignment::Scene::input"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OpenGLAssignment::Scene\l::input",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Handle the input."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="OpenGLAssignment::Window\l::poll_event",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_window.html#a11ac692583daefb3b00f85d888436f95",tooltip="Handle the window events."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="OpenGLAssignment::Camera\l::set_x_displacement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_camera.html#a202c2b20c0bbd11e238f712daabbf595",tooltip="Sets the x displacement for the camera movement."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="OpenGLAssignment::Camera\l::set_y_displacement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_camera.html#a1da7e03eff217f59071b54e0dbb9357c",tooltip="Sets the y displacement for the camera movement."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="OpenGLAssignment::Render\lTask::toggle_postproccess",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_render_task.html#a341ecbe4b369d9a7f52895749399ef9b",tooltip="Activates or inactivates the postproccess in a switch way."];
+}

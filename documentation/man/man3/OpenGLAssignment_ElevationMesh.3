@@ -1,0 +1,93 @@
+.TH "OpenGLAssignment::ElevationMesh" 3 "Sun May 24 2020" "Jesús Fermín Villar Ramírez | OpenGLAssignment" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OpenGLAssignment::ElevationMesh
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ElevationMesh\&.hpp>\fP
+.PP
+Inherits \fBOpenGLAssignment::Mesh\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBElevationMesh\fP (std::string path_file, unsigned int width, unsigned int height)"
+.br
+.RI "Creates an instance\&. "
+.ti -1c
+.RI "void \fBrender\fP ()"
+.br
+.RI "Render the surface\&. "
+.ti -1c
+.RI "glm::vec3 \fBcalculate_normal\fP (unsigned int width, unsigned int height, size_t i, size_t index)"
+.br
+.RI "Calculate the normal vertex\&. "
+.ti -1c
+.RI "std::vector< glm::vec3 > \fBto_glm_vector\fP (std::vector< float > &vector1)"
+.br
+.RI "Converts a given vector of floats to glm vec3 structure\&. "
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 40 of file ElevationMesh\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "OpenGLAssignment::ElevationMesh::ElevationMesh (std::string path_file, unsigned int width, unsigned int height)"
+
+.PP
+Creates an instance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath_file\fP The path of the heightmap file 
+.br
+\fIwidth\fP The width of the surface to create 
+.br
+\fIheight\fP The height of the surface to create 
+.RE
+.PP
+
+.PP
+Definition at line 44 of file ElevationMesh\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "glm::vec3 OpenGLAssignment::ElevationMesh::calculate_normal (unsigned int width, unsigned int height, size_t i, size_t index)"
+
+.PP
+Calculate the normal vertex\&. 
+.PP
+Definition at line 149 of file ElevationMesh\&.cpp\&.
+.SS "void OpenGLAssignment::ElevationMesh::render ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Render the surface\&. 
+.PP
+Reimplemented from \fBOpenGLAssignment::Mesh\fP\&.
+.PP
+Definition at line 64 of file ElevationMesh\&.hpp\&.
+.SS "std::vector<glm::vec3> OpenGLAssignment::ElevationMesh::to_glm_vector (std::vector< float > & vector1)\fC [inline]\fP"
+
+.PP
+Converts a given vector of floats to glm vec3 structure\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvector1\fP de float vector to convert 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The converted vector 
+.RE
+.PP
+
+.PP
+Definition at line 80 of file ElevationMesh\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Jesús Fermín Villar Ramírez | OpenGLAssignment from the source code\&.

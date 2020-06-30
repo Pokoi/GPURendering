@@ -1,0 +1,74 @@
+.TH "OpenGLAssignment::Shader" 3 "Sun May 24 2020" "Jesús Fermín Villar Ramírez | OpenGLAssignment" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OpenGLAssignment::Shader
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Shader\&.hpp>\fP
+.PP
+Inherited by \fBOpenGLAssignment::FragmentShader\fP, and \fBOpenGLAssignment::VertexShader\fP\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBSourceCode\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBoperator GLuint\fP () const"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBShader\fP (\fBSourceCode\fP &source_code, GLenum shader_type)"
+.br
+.RI "Creates an instance\&. "
+.ti -1c
+.RI "virtual \fB~Shader\fP ()"
+.br
+.RI "Frees the memory of the shader\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 38 of file Shader\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "OpenGLAssignment::Shader::Shader (\fBSourceCode\fP & source_code, GLenum shader_type)\fC [protected]\fP"
+
+.PP
+Creates an instance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsource_code\fP The source code of the shader 
+.br
+\fIshader_type\fP The type of the shader (vertex shader or fragment shader) 
+.RE
+.PP
+
+.PP
+Definition at line 8 of file Shader\&.cpp\&.
+.SS "OpenGLAssignment::Shader::~Shader ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Frees the memory of the shader\&. 
+.PP
+Definition at line 38 of file Shader\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "OpenGLAssignment::Shader::operator GLuint () const\fC [inline]\fP"
+
+.PP
+Definition at line 130 of file Shader\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Jesús Fermín Villar Ramírez | OpenGLAssignment from the source code\&.

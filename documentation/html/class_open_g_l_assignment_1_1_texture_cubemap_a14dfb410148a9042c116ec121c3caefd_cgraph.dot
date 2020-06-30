@@ -1,0 +1,18 @@
+digraph "OpenGLAssignment::TextureCubemap::TextureCubemap"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OpenGLAssignment::Texture\lCubemap::TextureCubemap",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Creates an instance."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="OpenGLAssignment::Texture\l::colors",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_texture.html#a157615090036ae8956601909a4775c58",tooltip="Gets a pointer to the first element in the texture buffer."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="OpenGLAssignment::Texture\l::get_height",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_texture.html#a1bb9ac697c653a819601164066e57253",tooltip="Gets the height of the texture."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="OpenGLAssignment::Texture\l::get_width",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_texture.html#acd7aea103a3e163e03bb4e238600a5b4",tooltip="Gets the width of the texture."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="OpenGLAssignment::Texture\lCubemap::load_texture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_texture_cubemap.html#a76cf001d440656dd70a635f00bdf71cc",tooltip="Load a texture."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="OpenGLAssignment::Texture\l::Texture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_texture.html#a9576c78995ed8eb8a0153898ab0985c1",tooltip="Creates an instance."];
+}

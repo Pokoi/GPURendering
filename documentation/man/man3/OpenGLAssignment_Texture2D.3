@@ -1,0 +1,131 @@
+.TH "OpenGLAssignment::Texture2D" 3 "Sun May 24 2020" "Jesús Fermín Villar Ramírez | OpenGLAssignment" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OpenGLAssignment::Texture2D
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Texture2D\&.hpp>\fP
+.PP
+Inherits \fBOpenGLAssignment::Texture\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTexture2D\fP (std::string path, \fBParameter\fP wrap=Parameter::CLAMP_TO_EDGE, \fBParameter\fP filter=Parameter::MIPMAP_LINEAR_FILTER)"
+.br
+.RI "Creates an instance\&. "
+.ti -1c
+.RI "void \fBbind\fP () override"
+.br
+.RI "Bind the texture to use it\&. "
+.ti -1c
+.RI "void \fBunbind\fP () override"
+.br
+.RI "Unbind the texture before use it\&. "
+.ti -1c
+.RI "std::shared_ptr< \fBTexture\fP > \fBload_texture\fP (std::string path, \fBParameter\fP wrap=Parameter::CLAMP_TO_EDGE, \fBParameter\fP filter=Parameter::MIPMAP_LINEAR_FILTER)"
+.br
+.RI "Load a texture file\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static std::shared_ptr< \fBTexture\fP > \fBget_texture\fP (std::string path, \fBParameter\fP wrap=Parameter::REPEAT, \fBParameter\fP filter=Parameter::MIPMAP_LINEAR_FILTER)"
+.br
+.RI "Get a texture by its path\&. "
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 45 of file Texture2D\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "OpenGLAssignment::Texture2D::Texture2D (std::string path, \fBParameter\fP wrap = \fCParameter::CLAMP_TO_EDGE\fP, \fBParameter\fP filter = \fCParameter::MIPMAP_LINEAR_FILTER\fP)\fC [inline]\fP"
+
+.PP
+Creates an instance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP The path of the texture 
+.br
+\fIwrap\fP The wrap parameter 
+.br
+\fIfilter\fP The filter parameter 
+.RE
+.PP
+
+.PP
+Definition at line 82 of file Texture2D\&.hpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void OpenGLAssignment::Texture2D::bind ()\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Bind the texture to use it\&. 
+.PP
+Reimplemented from \fBOpenGLAssignment::Texture\fP\&.
+.PP
+Definition at line 117 of file Texture2D\&.hpp\&.
+.SS "static std::shared_ptr<\fBTexture\fP> OpenGLAssignment::Texture2D::get_texture (std::string path, \fBParameter\fP wrap = \fCParameter::REPEAT\fP, \fBParameter\fP filter = \fCParameter::MIPMAP_LINEAR_FILTER\fP)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get a texture by its path\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP The path of the texture 
+.br
+\fIwrap\fP The wrap parameter 
+.br
+\fIfilter\fP The filter parameter 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The pointer to the texture 
+.RE
+.PP
+
+.PP
+Definition at line 59 of file Texture2D\&.hpp\&.
+.SS "std::shared_ptr<\fBTexture\fP> OpenGLAssignment::Texture2D::load_texture (std::string path, \fBParameter\fP wrap = \fCParameter::CLAMP_TO_EDGE\fP, \fBParameter\fP filter = \fCParameter::MIPMAP_LINEAR_FILTER\fP)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Load a texture file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP The path of the file 
+.br
+\fIwrap\fP The wrap parameter 
+.br
+\fIfilter\fP The filter parameter 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The texture 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBOpenGLAssignment::Texture\fP\&.
+.PP
+Definition at line 130 of file Texture2D\&.hpp\&.
+.SS "void OpenGLAssignment::Texture2D::unbind ()\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Unbind the texture before use it\&. 
+.PP
+Reimplemented from \fBOpenGLAssignment::Texture\fP\&.
+.PP
+Definition at line 125 of file Texture2D\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Jesús Fermín Villar Ramírez | OpenGLAssignment from the source code\&.

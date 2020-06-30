@@ -1,0 +1,13 @@
+digraph "C:/Users/jesus/OneDrive" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_54ad5b48e13ddcd70942c595f85221b4 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="jesus" fontname="Helvetica", fontsize="10", URL="dir_54ad5b48e13ddcd70942c595f85221b4.html"]
+  subgraph clusterdir_d61ff1ecc28292d8806bad12a1f9c68e {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_d61ff1ecc28292d8806bad12a1f9c68e.html"];
+    dir_d61ff1ecc28292d8806bad12a1f9c68e [shape=plaintext label="OneDrive"];
+    dir_66ca333a5e651197bec7b72292e0bd92 [shape=box label="Escritorio" color="red" fillcolor="white" style="filled" URL="dir_66ca333a5e651197bec7b72292e0bd92.html"];
+  }
+  }
+}

@@ -1,0 +1,55 @@
+digraph "main"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="OpenGLAssignment::Scene::run",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_scene.html#a1c61c5bc598a3dd828f9457cf294b1bb",tooltip="Scene loop."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="OpenGLAssignment::Window\l::clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_window.html#a65e3615480f6a1607d32b8553c9d1a16",tooltip="Clears the window."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="OpenGLAssignment::Render\lTask::get_model",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_render_task.html#a892f762eaef442d313288e6098af3efa",tooltip="Gets a model by name."];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="OpenGLAssignment::Camera\l::get_position",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_camera.html#ad5237426a12b4e9dbcb4f6c984f78b08",tooltip="Gets the position of the camera."];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="OpenGLAssignment::Scene\l::input",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_scene.html#ac66d43850a7944f5ad41188af06647dc",tooltip="Handle the input."];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="OpenGLAssignment::Window\l::poll_event",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_window.html#a11ac692583daefb3b00f85d888436f95",tooltip="Handle the window events."];
+  Node6 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="OpenGLAssignment::Camera\l::set_x_displacement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_camera.html#a202c2b20c0bbd11e238f712daabbf595",tooltip="Sets the x displacement for the camera movement."];
+  Node6 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="OpenGLAssignment::Camera\l::set_y_displacement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_camera.html#a1da7e03eff217f59071b54e0dbb9357c",tooltip="Sets the y displacement for the camera movement."];
+  Node6 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="OpenGLAssignment::Render\lTask::toggle_postproccess",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_render_task.html#a341ecbe4b369d9a7f52895749399ef9b",tooltip="Activates or inactivates the postproccess in a switch way."];
+  Node2 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="OpenGLAssignment::Scene\l::render",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_scene.html#af743cc56f5ea7486e4a6bbe5f8622932",tooltip="Render the scene."];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="OpenGLAssignment::Render\lTask::render",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_render_task.html#aae3febb180c4733187137cc8179f2824",tooltip="Render the scene."];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="OpenGLAssignment::Framebuffer\l::bind",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_framebuffer.html#a7a9bdaa3d127cc0b74dbbb90b839d43b",tooltip="Binds the framebuffer to use it."];
+  Node12 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="OpenGLAssignment::Skybox\l::render",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_skybox.html#a07051a43767a094b435fc295e2e363b5",tooltip="Render the skybox."];
+  Node14 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="OpenGLAssignment::Texture\lCubemap::bind",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_texture_cubemap.html#a20f1e502e3629fc87ffe108986461559",tooltip="Binds a texture to use it."];
+  Node14 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="OpenGLAssignment::Camera\l::get_projection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_camera.html#a97eb21d9be18383c28b100adda7e078c",tooltip="Gets the projection matrix."];
+  Node14 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="OpenGLAssignment::Camera\l::get_transform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_camera.html#a70061e13d0871a44e54af94a8959da24",tooltip="Gets the transformation of the camera."];
+  Node12 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="OpenGLAssignment::Framebuffer\l::render",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_framebuffer.html#af44cb64714b95f2074fe5b26a26b6b7a",tooltip="Render the framebuffer."];
+  Node12 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="OpenGLAssignment::Light\l::render",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_light.html#aaedc6884d12e21dec6468143214fb8a6",tooltip="Render. Update the lights values."];
+  Node19 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="OpenGLAssignment::Light\l::get_ambient_intensity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_light.html#aad88e5ccf058bd43f0f042e1bae256a6",tooltip="Gets the ambient intensity."];
+  Node19 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="OpenGLAssignment::Light\l::get_intensity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_light.html#a1033f58922682a67a1fc7f851b9d4ceb",tooltip="Gets the light intensity."];
+  Node19 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="OpenGLAssignment::Shader\lProgram::get_shader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_shader_program.html#ac6706fea0863820d3f5555875370248a",tooltip="Gets a shader program by its name."];
+  Node2 -> Node23 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="OpenGLAssignment::Window\l::swap_buffers",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_window.html#a36ac2d71601a781d33424ef3a7b66308",tooltip="Swap the buffers of the window."];
+  Node2 -> Node24 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="OpenGLAssignment::Camera\l::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_camera.html#ac27402fa0675bebda608562a4538d9cd",tooltip="Updates the camera position."];
+}

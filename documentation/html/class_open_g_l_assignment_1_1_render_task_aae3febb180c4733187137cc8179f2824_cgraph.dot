@@ -1,0 +1,30 @@
+digraph "OpenGLAssignment::RenderTask::render"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OpenGLAssignment::Render\lTask::render",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Render the scene."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="OpenGLAssignment::Framebuffer\l::bind",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_framebuffer.html#a7a9bdaa3d127cc0b74dbbb90b839d43b",tooltip="Binds the framebuffer to use it."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="OpenGLAssignment::Skybox\l::render",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_skybox.html#a07051a43767a094b435fc295e2e363b5",tooltip="Render the skybox."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="OpenGLAssignment::Texture\lCubemap::bind",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_texture_cubemap.html#a20f1e502e3629fc87ffe108986461559",tooltip="Binds a texture to use it."];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="OpenGLAssignment::Camera\l::get_projection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_camera.html#a97eb21d9be18383c28b100adda7e078c",tooltip="Gets the projection matrix."];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="OpenGLAssignment::Camera\l::get_transform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_camera.html#a70061e13d0871a44e54af94a8959da24",tooltip="Gets the transformation of the camera."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="OpenGLAssignment::Framebuffer\l::render",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_framebuffer.html#af44cb64714b95f2074fe5b26a26b6b7a",tooltip="Render the framebuffer."];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="OpenGLAssignment::Light\l::render",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_light.html#aaedc6884d12e21dec6468143214fb8a6",tooltip="Render. Update the lights values."];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="OpenGLAssignment::Light\l::get_ambient_intensity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_light.html#aad88e5ccf058bd43f0f042e1bae256a6",tooltip="Gets the ambient intensity."];
+  Node8 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="OpenGLAssignment::Light\l::get_intensity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_light.html#a1033f58922682a67a1fc7f851b9d4ceb",tooltip="Gets the light intensity."];
+  Node8 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="OpenGLAssignment::Camera\l::get_position",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_camera.html#ad5237426a12b4e9dbcb4f6c984f78b08",tooltip="Gets the position of the camera."];
+  Node8 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="OpenGLAssignment::Shader\lProgram::get_shader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_assignment_1_1_shader_program.html#ac6706fea0863820d3f5555875370248a",tooltip="Gets a shader program by its name."];
+}
